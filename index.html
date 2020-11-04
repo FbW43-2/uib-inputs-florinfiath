@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inputs Exercise</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Emag!Do your shopping here!</h1>
+            <form method="GET" action="/search-article">
+                    <div class="header-search">
+                        <label for="search-article"></label>
+                        <input placeholder="Search Article"class="placeholder"type="search" id="search-article" name="search-article" required/>
+                    </div> 
+                    <div class="header-search">
+                        <button type="search">Search</button>
+                    </div>
+            </form>
+        </section>
+    </header>
+     <main>
+<section>
+    <h2>Sell your products here</h2>
+            <form method="POST" action="/upload-student">
+              
+                    
+                    <div>
+                        <label for="input-article-name">Article name</label>
+                        <input placeholder="Place the name here" type="text" id="input-article-name" name="input-article-name"minlength="15"maxlength="30" required/>
+                    </div>
+                    <div>
+                       <label for="input-article-category">Article category</label>
+                        <input placeholder="Place the category here" type="text" id="input-article-category" name="input-article-category"minlength="15"maxlength="50" required/>
+                    </div>
+                    
+                     <div>
+                       <label id="input-article-description"for="input-article-description">Article description</label>
+                       <textArea id="input-article-description"minlength="40"maxlength="300" required></textArea>
+                    </div>
+                    
+            
+                    <div>
+                        <label for="input-image">Upload an image</label>
+                        <input type="file" id="input-image" name="input-image" accept="image/*"/>
+                    </div>
+                    
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                
+            </form>
+        </section>
+     </main>
+
+</body>
+</html>
